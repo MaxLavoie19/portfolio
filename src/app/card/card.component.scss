@@ -1,0 +1,37 @@
+
+@import "../../variables";
+$card-width: 300px;
+$card-padding: 5px;
+$demo-side-size: $card-width - $card-padding;
+
+.card-container {
+    &:hover {
+        cursor: pointer;
+        .card {
+            transform: translate(-5px, -5px);
+            box-shadow: 5px 5px 2px $shadow;
+        }
+    }
+    .card {
+        background-color: $beige;
+        color: $dark;
+        margin: 5px;
+        width: $card-width;
+        border-radius: 5px;
+        padding: $card-padding;
+    
+        .demonstrator {
+            background-color: $grey;
+            height: $demo-side-size;
+            width: $demo-side-size;
+            border-radius: 5px;
+        }
+        
+        .title {
+            text-align: center;
+            padding: 5px;
+            width: 100%;
+            font-weight: 700;
+        }
+    }
+}

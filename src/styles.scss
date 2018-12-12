@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import '_variables';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+    font: 100% $font-stack;
+    background-color: $dark;
+    color: $font-color;
+    margin: 0;
+}
+
+button {
+    i {
+        color: $button;
+    }
+    &:hover {
+        cursor: pointer;
+        i {
+            color: $hovered-button;
+        }
+    }
+    &:active i {
+        color: $clicked-button;
+        cursor: pointer;
+    }
+}
