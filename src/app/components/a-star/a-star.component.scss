@@ -1,0 +1,13 @@
+
+@import "../../../variables";
+
+.cell {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: rgba($beige, 0.2);
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+    margin: 1px;
+}

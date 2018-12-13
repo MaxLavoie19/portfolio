@@ -1,0 +1,14 @@
+
+<mat-card (click)="expand()">
+  <mat-card-actions *ngIf="!isPreview">
+      <button mat-icon-button (click)="collapse($event)" class="close">
+        <i class="material-icons">close</i>
+      </button>
+  </mat-card-actions>
+  <mat-card-content>
+    <ng-template appProject></ng-template>
+  </mat-card-content>
+  <mat-card-title>
+    {{ project.name }}
+  </mat-card-title>
+</mat-card>

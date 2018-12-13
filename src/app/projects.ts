@@ -1,11 +1,12 @@
-import { Project } from './models/project.model';
+import { AStar } from './models/a-star.model';
 
 export const PROJECTS = [
+    new AStar(),
+    /*
     new Project('RBS'),
     new Project('CSP'),
-    new Project('A*'),
     new Project('MiniMax'),
-    new Project('Monte-Marlo'),
+    new Project('Monte-Carlo'),
     new Project('Bag of word'),
     new Project('Naive Baye\'s classifier'),
     new Project('Confusion matrix'),
@@ -24,4 +25,5 @@ export const PROJECTS = [
     new Project('Back propagation'),
     new Project('Stochastic Gradient Descent'),
     new Project('Basin Hopping'),
+    */
 ];

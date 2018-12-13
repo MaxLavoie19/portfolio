@@ -1,0 +1,14 @@
+
+<div>
+    <div *ngFor="let row of map"  class="row">
+      <span *ngFor="let cell of row" class="cell">
+        {{ cell }}
+      </span>
+    </div>
+    <div *ngIf="!isPreview">
+      <div>' ' empty;</div>
+      <div>'X' wall</div>
+      <div>'O' origin</div>
+      <div>'P' path</div>
+    </div>
+</div>
