@@ -2,14 +2,25 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-content',
-  templateUrl: './card-content.component.html',
-  styleUrls: ['./card-content.component.scss']
 })
 export class CardContentComponent implements OnInit {
+  public data;
+  public isPreview = true;
+  private dataService;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(dataService) {
+    this.dataService = dataService;
   }
 
+  ngOnInit() {
+    this.getData();
+  }
+
+  getData() {
+    this.data = this.dataService.getData();
+  }
+
+  resize(isPreview: boolean) {
+    this.isPreview = isPreview;
+  }
 }

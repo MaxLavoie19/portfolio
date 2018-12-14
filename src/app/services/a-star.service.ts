@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class AStarService {
 
 constructor() { }
-  getMap(): string[][] {
+getData(): string[][] {
     return [
       ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
       ['X', 'O', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', 'X'],
