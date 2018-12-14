@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatIconModule } from '@angular/material';
 
-import { DxButtonModule } from 'devextreme-angular';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleBarModule } from './components/title-bar/title-bar.module';
 import { CardModule } from './components/card/card.module';
 import { AStarModule } from './components/a-star/a-star.module';
+import { ConfusionMatrixModule } from './components/confusion-matrix/confusion-matrix.module';
 
 @NgModule({
    declarations: [
@@ -21,9 +20,9 @@ import { AStarModule } from './components/a-star/a-star.module';
       BrowserAnimationsModule,
       MatButtonModule,
       MatIconModule,
-      DxButtonModule,
       TitleBarModule,
       AStarModule,
+      ConfusionMatrixModule,
       CardModule,
    ],
    bootstrap: [

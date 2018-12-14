@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConfusionMatrixComponent } from './confusion-matrix.component';
+import { DxDataGridModule } from 'devextreme-angular';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    DxDataGridModule,
   ],
-  declarations: [ConfusionMatrixComponent]
+  declarations: [ConfusionMatrixComponent],
+  bootstrap: [
+    ConfusionMatrixComponent,
+  ],
 })
 export class ConfusionMatrixModule { }

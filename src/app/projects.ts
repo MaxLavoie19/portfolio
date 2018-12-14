@@ -3,7 +3,7 @@ import { ConfusionMatrix } from './models/confusion-matrix';
 
 export const PROJECTS = [
     new AStar(),
-    // new ConfusionMatrix(),
+    new ConfusionMatrix(),
     /*
     new Project('RBS'),
     new Project('CSP'),

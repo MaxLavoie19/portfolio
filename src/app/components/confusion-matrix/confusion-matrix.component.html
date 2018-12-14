@@ -1,3 +1,14 @@
-<p>
-  confusion-matrix works!
-</p>
+
+<dx-data-grid
+  id="gridContainer"
+  [dataSource]="dataSource"
+  keyExpr="id"
+  [columns]="columns"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+>
+</dx-data-grid>
+
+<div *ngIf="!isPreview" class="">
+
+</div>

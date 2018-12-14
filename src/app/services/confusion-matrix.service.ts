@@ -6,9 +6,11 @@ import { Matrix } from '../models/matrix.model';
 })
 export class ConfusionMatrixService {
   constructor() { }
-  getMatrix(): Matrix {
+  getData(): Matrix {
     return {
-      '': {'' : 2},
+      'setosa': {'setosa' : 46, 'versicolor' : 4, 'virginica' : 0},
+      'versicolor': {'setosa' : 3, 'versicolor' : 50, 'virginica' : 7},
+      'virginica': {'setosa' : 0, 'versicolor' : 5, 'virginica' : 35},
     };
   }
 }
