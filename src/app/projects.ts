@@ -1,7 +1,9 @@
 import { AStar } from './models/a-star.model';
+import { ConfusionMatrix } from './models/confusion-matrix';
 
 export const PROJECTS = [
     new AStar(),
+    new ConfusionMatrix(),
     /*
     new Project('RBS'),
     new Project('CSP'),
@@ -18,6 +20,7 @@ export const PROJECTS = [
     new Project('PCA'),
     new Project('ICA'),
     new Project('Markov Model'),
+    new Project('Hidden Markov Model'),
     new Project('Artificial Neural Network'),
     new Project('Deep Neural Network'),
     new Project('Q-learning'),

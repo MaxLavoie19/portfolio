@@ -6,6 +6,9 @@ import { AStarComponent } from './a-star.component';
   imports: [
     CommonModule
   ],
-  declarations: [AStarComponent]
+  declarations: [AStarComponent],
+  bootstrap: [
+    AStarComponent,
+  ],
 })
 export class AStarModule { }

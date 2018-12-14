@@ -18,6 +18,5 @@ import { ProjectDirective } from './project.directive';
    exports: [
       CardComponent
    ],
-   providers: []
 })
 export class CardModule { }

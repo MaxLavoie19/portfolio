@@ -1,14 +1,15 @@
 
-<div>
-    <div *ngFor="let row of map"  class="row">
-      <span *ngFor="let cell of row" class="cell">
-        {{ cell }}
-      </span>
-    </div>
-    <div *ngIf="!isPreview">
-      <div>' ' empty;</div>
-      <div>'X' wall</div>
-      <div>'O' origin</div>
-      <div>'P' path</div>
-    </div>
+<table>
+  <tr *ngFor="let row of map">
+    <td *ngFor="let cell of row">
+      {{ cell }}
+    </td>
+  </tr>
+</table>
+<div *ngIf="!isPreview" class="legend">
+  <div>Legend:</div>
+  <div>' ' empty;</div>
+  <div>'X' wall</div>
+  <div>'O' origin</div>
+  <div>'P' path</div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { AStarService } from '../../services/a-star.service';
 
@@ -9,7 +9,7 @@ import { AStarService } from '../../services/a-star.service';
 })
 export class AStarComponent implements OnInit {
   public map: string[][];
-  @Input() isPreview = true;
+  public isPreview = true;
 
   constructor(private aStarService: AStarService) { }
 
@@ -21,4 +21,7 @@ export class AStarComponent implements OnInit {
     this.map = this.aStarService.getMap();
   }
 
+  resize(isPreview: boolean) {
+    this.isPreview = isPreview;
+  }
 }

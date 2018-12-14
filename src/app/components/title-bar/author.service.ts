@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AUTHOR } from '../../author';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AuthorService {
   constructor() { }
   getAuthorName(): string {
